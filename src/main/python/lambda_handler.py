@@ -7,7 +7,7 @@ successes = 0
 def lambda_handler(source_region, destination_region, credentials):
 
     session = boto3.Session()
-
+    # Adding a new comment to test codeguru review PR
     # Load Records into KINESIS
     CLIENT_NAME = 'kinesis'
     kinesis = session.client(CLIENT_NAME, region_name=source_region, aws_access_key_id=credentials,
